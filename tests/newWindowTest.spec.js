@@ -6,6 +6,7 @@ const Winobj=new PractiseAnotherWindow(page);
 await Winobj.newWindowActivity();
 await expect(Winobj.closeButton).toBeVisible();
 await Winobj.closeAnotherPopup ();
+await expect(Winobj.loginButton).toBeVisible();
 
 
 })

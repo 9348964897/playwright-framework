@@ -16,4 +16,8 @@ this.facebookIcon=page.locator('//a[@href="https://www.facebook.com/OrangeHRM/"]
     async closeAnotherPopup (){
 await this.closeButton.click();
     }
+
+    get loginButton(){
+        return this.newPage.locator('//div[@aria-label="Log in"]');
+    }
 }
